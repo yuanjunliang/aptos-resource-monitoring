@@ -10,7 +10,6 @@ client.subscribeResource(
   "0x1::coin::CoinStore<0x1::aptos_coin::AptosCoin>",
   90515935, // start ledger version
   (changeInfo: any) => {
-    // console.log({ changeInfo: JSON.stringify(changeInfo) });
     logger.info(`changeInfo: ${JSON.stringify(changeInfo)}`);
   }
 );
